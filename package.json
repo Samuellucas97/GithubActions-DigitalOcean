@@ -1,0 +1,22 @@
+{
+  "name": "testing-gihubactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuellucas97/Testing-GihubActions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samuellucas97/Testing-GihubActions/issues"
+  },
+  "homepage": "https://github.com/Samuellucas97/Testing-GihubActions#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
