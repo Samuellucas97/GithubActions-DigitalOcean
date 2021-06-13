@@ -48,3 +48,14 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           tags: samuel1797/test-github-actions:${{ steps.tagging.outputs.new_version }}
+      
+      - name: Setting doctl (Digital Ocean command line)
+        uses: matootie/dokube@v1.3.2
+        with:
+            personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
+            clusterName: githubactions-k8s
+
+      - name: set deployment image (from Dockerhub)
+        run: kubectl set image deployment node-server-deployment node-server=samuel1797/test-github-actions:${{ steps.tagging.outputs.new_version }}
+
+

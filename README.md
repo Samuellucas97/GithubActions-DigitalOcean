@@ -1,3 +1,6 @@
+## Introduction
+
+The goal this repository is to implement Continuous Delivery with Github Action + Digital Ocean (using Kubernetes).
 
 ## How to install and to run
 
@@ -22,5 +25,5 @@ After this, check your browser in the following address: [http://localhost:3000]
 
 ```
 $ docker build --tag node-docker .    ## To create docker image
-$ docker run -d -p 3000:3000 node-docker ## To run docker image
+$ docker run -d -p 3000:3000 node-docker ## To run docker container
 ```
